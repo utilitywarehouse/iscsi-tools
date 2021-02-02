@@ -1,6 +1,5 @@
 builds:
-  - id: iscsiadm
-    main: ./iscsiadm/main.go
+  - id: main
     env:
       - CGO_ENABLED=0
     goos:
@@ -8,9 +7,9 @@ builds:
     goarch:
       - amd64
 archives:
-  - id: iscsiadm
+  - id: main
     builds:
-      - iscsiadm
+      - main
     format: binary
     files:
       - none*
