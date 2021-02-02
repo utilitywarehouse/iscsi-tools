@@ -1,0 +1,20 @@
+builds:
+  - id: iscsiadm
+    main: ./iscsiadm/main.go
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+    goarch:
+      - amd64
+archives:
+  - id: iscsiadm
+    builds:
+      - iscsiadm
+    format: binary
+    files:
+      - none*
+release:
+  github:
+    owner: utilitywarehouse
+    name: iscsi-tools
