@@ -36,7 +36,7 @@ data "ignition_file" "iscsiadm" {
   path       = "/opt/bin/iscsi/iscsiadm"
 
   source {
-    source = "https://github.com/utilitywarehouse/iscsi-tools/releases/download/${var.release_version}/iscsi-tools_${var.release_version}_linux_amd64"
+    source = "https://github.com/utilitywarehouse/iscsi-tools/releases/download/${var.release_version}/iscsiadm_${var.release_version}_linux_amd64"
   }
 }
 
