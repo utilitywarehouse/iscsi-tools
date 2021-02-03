@@ -31,7 +31,7 @@ func main() {
 	}
 }
 
-// expexts a docker container named `open_iscsid` to exec the iscsiadm with the
+// expects a docker container named `open_iscsid` to exec the iscsiadm with the
 // given arguments inside.
 func execIscsiadmCommand(iscsiadmArgs []string) ([]byte, error) {
 	cmd := `/usr/bin/docker`
