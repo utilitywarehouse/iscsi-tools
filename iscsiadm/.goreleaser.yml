@@ -1,5 +1,6 @@
 builds:
   - id: main
+    binary: iscsiadm
     env:
       - CGO_ENABLED=0
     goos:
